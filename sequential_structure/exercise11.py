@@ -1,3 +1,4 @@
+# ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 TAX_PRICE = 4.00
 weight_fish = float(input("Weight fish: "))
 
@@ -11,6 +12,7 @@ if weight_fish > 50:
 
 else:
     print("You is isent of payment")
+# ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 # Solution with function
@@ -27,3 +29,22 @@ def tax_payment_condition(weight_fish):
 
 
 tax_payment_condition(55)
+# ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# Solution with validation data
+def tax_payment_valid(weight_fish):
+    while weight_fish <= 0:
+        print("Weight invalid, number negative, try again!")
+        weight_fish = float(input("What weight fish: "))
+    if weight_fish <= 50:
+        print("You isent of payment tax of weight")
+    else:
+        tax_payment_value = (weight_fish - 50) * TAX_PRICE
+        print(
+            "The excess weight fish is bigger under table of values in %.1f kg and you payment of tax under weight is %.2f"
+            % ((weight_fish - 50), tax_payment_value)
+        )
+
+
+tax_payment_valid(-10)
