@@ -11,3 +11,19 @@ if weight_fish > 50:
 
 else:
     print("You is isent of payment")
+
+
+# Solution with function
+def tax_payment_condition(weight_fish):
+    print("\n***** Solution with function *****")
+    if weight_fish > 50:
+        tax_payment_value = (weight_fish - 50) * TAX_PRICE
+        print(
+            "The excess weight fish is bigger under table of values isent in %.1f and you payment of tax under weight fish is: %.2f"
+            % ((weight_fish - 50), tax_payment_value),
+        )
+    else:
+        print("You isent of payment tax under weight fish excess")
+
+
+tax_payment_condition(55)
