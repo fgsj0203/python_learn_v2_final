@@ -7,3 +7,15 @@ elif gender_people_first_letter == "m":
     print("Male")
 else:
     print("Gender invalid")
+
+
+def gender_people(gender):
+    print("\n *** Solution with function ***")
+    if gender[0].lower() == "f":
+        print("Female")
+    elif gender[0].lower() == "m":
+        print("Male")
+    else:
+        print("Gender invalid")
+    
+gender_people("S")
