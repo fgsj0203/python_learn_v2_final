@@ -24,3 +24,11 @@ state_civil = str(input("Your state civil: \n"))
 while state_civil[0].lower() not in ("s", "c", "v", "d"):
     print("State civil invalid, try again!")
     state_civil = str(input("State civil (validation): "))
+
+# Printing values final valid
+print("\n------------ Final Values ---------------")
+print("Name: %s" % name_people)
+print("Age people: %d" % age_people)
+print("Salary: %.2f" % salary)
+print("Gender: %s" % gender_people)
+print("State civil: %s" % state_civil)
