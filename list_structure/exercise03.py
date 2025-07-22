@@ -3,6 +3,8 @@ def average_notes_lists():
     sum_notes = 0
     for x in range(0, 4):
         note = float(input("note: "))
+        while note < 0 or note > 10:
+            note = float(input("note (validation): "))
         list_notes.append(note)
         sum_notes += note
 
