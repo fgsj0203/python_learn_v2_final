@@ -3,3 +3,17 @@ for x in range(0, 21):
 
 for x in range(0, 21):
     print(x, end=" ")
+
+# Solution using function for two formats
+
+
+def number_under():
+    for x in range(0, 21):
+        print(x)
+
+
+def number_side():
+    for x in range(0, 21):
+        print(x, end=" ")
+
+
