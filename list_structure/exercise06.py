@@ -10,3 +10,17 @@ for i in list_numbers:
         smaller_number = i
 
 print(smaller_number)
+
+
+# Solution with function and parameter
+def smaller_number(list_smaller_numbers):
+    number_smaller = 0
+    number_list = []
+    for x in number_list:
+        if x < number_smaller:
+            number_smaller = x
+    print(number_smaller)
+
+
+smaller_number([1, 5, 3, 4, 9, 0])
+# --------------------------------------------------------
